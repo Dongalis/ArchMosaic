@@ -15,7 +15,6 @@ packages_install_bulk() {
         local file=("$SCRIPT_DIR/profiles/${profile}/packages.txt")
 
         if [[ ! -f "$file" ]]; then
-            echo "Warning: File not found: $file"
             continue
         fi
 
@@ -58,7 +57,6 @@ flatpak_install_bulk() {
         local file=("$SCRIPT_DIR/profiles/${profile}/flatpaks.txt")
 
         if [[ ! -f "$file" ]]; then
-            echo "Warning: File not found: $file"
             continue
         fi
 

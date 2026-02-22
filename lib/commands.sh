@@ -10,7 +10,6 @@ execute_commands() {
 
     for file in "${files[@]}"; do
         if [[ ! -f "$file" ]]; then
-            echo "File not found: $file"
             continue
         fi
 
